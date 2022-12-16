@@ -21,3 +21,49 @@ h6 {
 p {
   margin: 0;
 }
+
+.header{
+  display: flex;
+  background-color: grey;
+}
+
+.left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+}
+
+.nav a{
+  padding: 20px;
+}
+
+.hero-banner{
+  display: flex;
+  background-image: url("../images/02-hero-bg.jpg");
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: flex-end;
+}
+
+.subtitle{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.subtitle h2{
+  display: flex;
+  background-color: beige;
+  padding: 10px;
+}
