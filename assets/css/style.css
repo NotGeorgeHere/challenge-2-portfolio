@@ -26,26 +26,32 @@ p {
   display: flex;
   background-color: grey;
 }
-
+/* Sets the flexbox and css for the header */
 .left{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-basis: 50%;
+  flex-basis: 20%;
+  background-color: pink;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .nav{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-basis: 50%;
+  flex-basis: 89%;
   flex-wrap: wrap;
 }
 
 .nav a{
   padding: 20px;
+  text-decoration: underline pink solid 5px;
 }
 
+
+/* Sets the flexbox and css for the hero-banner */
 .hero-banner{
   display: flex;
   background-image: url("../images/02-hero-bg.jpg");
@@ -66,4 +72,57 @@ p {
   display: flex;
   background-color: beige;
   padding: 10px;
+}
+
+/* Sets the flexbox and css for the main content ie about me, work and contact */
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex: wrap;
+}
+
+/* Becomes more specfic and adds basic css to each flexbox container */
+.page-section{
+  margin: 50px;
+  /* padding: 100px; */
+  background-color: white;
+}
+
+
+.page-section:not(:first-child){
+  margin: 20px;
+  padding: 100px;
+  background-color: blue;
+}
+
+/* flexbxo and css for the about me section */
+.about-me{
+  display: flex;
+}
+
+.about-header{
+  border-right: 5px solid pink;
+  flex-basis: 100%;
+}
+
+.about-content{
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.see-more{
+  font-size: 25px;
+}
+
+
+/* Media queries for screen size */
+@media screen and (max-width: 1250px) {
+  .about-me{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-header{
+    border-bottom: 5px solid pink;
+    border-right: none;
+  }
 }
