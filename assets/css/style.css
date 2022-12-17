@@ -66,12 +66,28 @@ p {
   flex-wrap: wrap;
   align-items: center;
   margin-right: 50px;
+  flex-basis: 80%;
+  justify-content: flex-end;
 }
 
 .subtitle h2{
   display: flex;
   background-color: beige;
   padding: 10px;
+}
+
+.avatar{
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/img_avatar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  flex-basis: 20%;
+  z-index: 100;
+  position: relative;
+  top: 30px;
+  right: 30px;
 }
 
 /* Sets the flexbox and css for the main content ie about me, work and contact */
@@ -286,4 +302,10 @@ p {
     "projectFive";
   }  
  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
 }
