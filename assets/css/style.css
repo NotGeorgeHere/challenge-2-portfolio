@@ -180,6 +180,7 @@ p {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: flex-start;
+  cursor: pointer;
 }
 
 .projectHeading{
@@ -191,6 +192,10 @@ p {
   font-size: 20px;
 }
 
+.content-align{
+  display:flex;
+  flex-direction: column;
+}
 
 /* Media queries for screen size */
 @media screen and (max-width: 1250px) {
