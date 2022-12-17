@@ -84,14 +84,6 @@ p {
 /* Becomes more specfic and adds basic css to each flexbox container */
 .page-section{
   margin: 50px;
-  background-color: white;
-}
-
-
-.contact{
-  margin: 20px;
-  padding: 100px;
-  background-color: blue;
 }
 
 /* flexbox and css for the about me section */
@@ -169,6 +161,7 @@ p {
   background-image: url("../images/02-run-buddy.jpg")
 }
 
+/* Sets the content within the grid */
 .projectContent{
   margin: 20px;
   background-position: center;
@@ -183,6 +176,7 @@ p {
   cursor: pointer;
 }
 
+/* Styles the text within the grid child */
 .projectHeading{
   display: flex;
   background-color: rgba(255,192,203,0.7);
@@ -197,7 +191,40 @@ p {
   flex-direction: column;
 }
 
-/* Media queries for screen size */
+/* Sets some basic styling for the links to each project */
+.link{
+  text-decoration: none;
+}
+
+.link:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+  margin-top: 2px;
+}
+
+
+.contact{
+  display: flex;
+}
+
+.contactHeader{
+  border-right: 5px solid pink;
+  flex-basis: 20%;
+  margin-right: 20px;
+}
+
+.contactDetails{
+  display: flex;
+  flex-basis: 80%;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+
+/* Media queries for about me screen size */
 @media screen and (max-width: 1250px) {
   .about-me{
     display: flex;
@@ -207,4 +234,56 @@ p {
     border-bottom: 5px solid pink;
     border-right: none;
   }
+}
+
+/* Media queries for work section screen size */
+
+@media screen and (max-width: 1250px){
+  .portfolio-header{
+    border-bottom: 5px solid pink;
+    border-right: none; 
+  }
+
+  .portfolio{
+    flex-direction: column;
+  }
+
+  .portfolio-content{
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-template-columns: 575px;
+    grid-template-areas: 
+    "projectOne"
+    "projectTwo"
+    "projectThree"
+    "projectFour"
+    "projectFive";
+  }
+}
+
+@media screen and (max-width: 650px){
+  .portfolio-content{
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-template-columns: 400px;
+    grid-template-areas: 
+    "projectOne"
+    "projectTwo"
+    "projectThree"
+    "projectFour"
+    "projectFive";
+  }  
+ 
+}
+
+@media screen and (max-width: 400px){
+  .portfolio-content{
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-template-columns: 200px;
+    grid-template-areas: 
+    "projectOne"
+    "projectTwo"
+    "projectThree"
+    "projectFour"
+    "projectFive";
+  }  
+ 
 }
