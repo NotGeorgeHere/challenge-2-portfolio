@@ -84,16 +84,15 @@ p {
 /* Becomes more specfic and adds basic css to each flexbox container */
 .page-section{
   margin: 50px;
-  /* padding: 100px; */
   background-color: white;
 }
 
 
-/* .page-section:not(:first-child) {
+.contact{
   margin: 20px;
   padding: 100px;
   background-color: blue;
-} */
+}
 
 /* flexbox and css for the about me section */
 .about-me{
@@ -119,12 +118,13 @@ p {
 .portfolio{
   display: flex;
   flex-wrap: wrap;
+  margin-right: 20px;
 }
 
 .portfolio-header{
   display: flex;
   border-right: 5px solid pink;
-  flex-basis: 20%;  
+  flex-basis: 20%; 
 }
 
 /* Sets up the grid for projects to go into */
@@ -132,7 +132,7 @@ p {
   flex-basis: 80%;
   margin: auto;
   display: grid;
-  justify-content: center;
+  justify-content: space-evenly;
   grid-template-rows: 250px 250px 250px 250px;
   grid-template-columns: 575px 575px;
   grid-template-areas: 
@@ -141,6 +141,8 @@ p {
   "projectTwo projectThree"
   "projectFour projectFive";
 }
+
+/* Sets the grid area name and background image for portfolio project */
 
 #projectOne{
   grid-area: projectOne;
@@ -172,6 +174,21 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 5px solid pink;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+.projectHeading{
+  display: flex;
+  background-color: rgba(255,192,203,0.7);
+  padding: 5px;
+  width: 150px;
+  color: white;
+  font-size: 20px;
 }
 
 
