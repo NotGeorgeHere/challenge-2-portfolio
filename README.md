@@ -7,7 +7,7 @@ My motivation for this project was to create a portfolio for employers to access
 ## Installation
 
 Github repository: https://github.com/NotGeorgeHere/challenge-2-portfolio
-Live deployment page: 
+Live deployment page: https://notgeorgehere.github.io/challenge-2-portfolio/#
 
 ## Usage
 
