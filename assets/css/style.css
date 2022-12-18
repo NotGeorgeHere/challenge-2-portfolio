@@ -24,7 +24,7 @@ p {
 
 .header{
   display: flex;
-  background-color: grey;
+  background-color: pink;
 }
 /* Sets the flexbox and css for the header */
 .left{
@@ -47,7 +47,9 @@ p {
 
 .nav a{
   padding: 20px;
-  text-decoration: underline pink solid 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
 }
 
 
@@ -72,8 +74,10 @@ p {
 
 .subtitle h2{
   display: flex;
-  background-color: beige;
+  background-color: rgba(255,192,203,0.8);
   padding: 10px;
+  color: white;
+  border-radius: 25px;
 }
 
 .avatar{
@@ -235,8 +239,17 @@ p {
   margin: auto;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  font-size: 1.2rem;
 }
 
+.contactDetails a{
+  text-decoration: none;
+  color: black;
+}
+
+.contactDetails:hover{
+  text-decoration: underline;
+}
 
 
 
